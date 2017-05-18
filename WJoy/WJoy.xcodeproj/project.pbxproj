@@ -541,6 +541,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WJoy" */;
 			compatibilityVersion = "Xcode 3.1";
@@ -755,7 +760,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\nDMG_PATH=\"/Volumes/WJoy\"\n\nhdiutil create _tmp.dmg -megabytes 200 -ov -volname \"WJoy\" -fs HFS+\nhdiutil attach _tmp.dmg\n\ncp -Rf \"$CONFIGURATION_BUILD_DIR/WJoy.app\" \"$DMG_PATH\"\nmkdir \"$DMG_PATH/.images\"\ncp \"$SOURCE_ROOT/dmg_background.png\" \"$DMG_PATH/.images/background.png\"\nln -s \"/Applications\" \"$DMG_PATH/Applications\"\n\n\"$SOURCE_ROOT/fix_dmg.applescript\"\n\nSetFile -a C \"$DMG_PATH\"\ncp \"$SOURCE_ROOT/app.icns\" \"$DMG_PATH/.VolumeIcon.icns\"\n\nhdiutil detach \"$DMG_PATH\"\nhdiutil convert _tmp.dmg -ov -format UDZO -imagekey zlib-level=9 -o \"wjoy.dmg\"\nrm _tmp.dmg\n\n\"$SOURCE_ROOT\"/../DMGEULA/build/\"$CONFIGURATION\"/dmgeula -lang_plist_path \"$SOURCE_ROOT\"/dmg_license_info.plist -licenses_dir \"$SOURCE_ROOT\" -dmg_path \"$SOURCE_ROOT\"/wjoy.dmg\n\nexit 0\n";
+			shellScript = "#!/bin/sh\n\nDMG_PATH=\"/Volumes/WJoy\"\n\nhdiutil create _tmp.dmg -megabytes 200 -ov -volname \"WJoy\" -fs HFS+\nhdiutil attach _tmp.dmg\n\ncp -Rf \"$CONFIGURATION_BUILD_DIR/WJoy.app\" \"$DMG_PATH\"\nmkdir \"$DMG_PATH/.images\"\ncp \"$SOURCE_ROOT/dmg_background.png\" \"$DMG_PATH/.images/background.png\"\nln -s \"/Applications\" \"$DMG_PATH/Applications\"\n\n\"$SOURCE_ROOT/fix_dmg.applescript\"\n\nSetFile -a C \"$DMG_PATH\"\ncp \"$SOURCE_ROOT/app.icns\" \"$DMG_PATH/.VolumeIcon.icns\"\n\nif [ -e \"$SOURCE_ROOT\"/wjoy.dmg ]\nthen\nrm \"$SOURCE_ROOT\"/wjoy.dmg\nfi\n\nhdiutil detach \"$DMG_PATH\"\nhdiutil convert _tmp.dmg -ov -format UDZO -imagekey zlib-level=9 -o \"wjoy.dmg\"\nrm _tmp.dmg\n\n\"$BUILT_PRODUCTS_DIR\"/dmgeula -lang_plist_path \"$SOURCE_ROOT\"/dmg_license_info.plist -licenses_dir \"$SOURCE_ROOT\" -dmg_path \"$SOURCE_ROOT\"/wjoy.dmg\n\nexit 0\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -846,7 +851,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -854,7 +865,9 @@
 				HEADER_SEARCH_PATHS = ../;
 				INFOPLIST_FILE = "WJoy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JustinBis.WJoy-foohid";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = WJoy;
 			};
 			name = Debug;
@@ -863,12 +876,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = ../;
 				INFOPLIST_FILE = "WJoy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JustinBis.WJoy-foohid";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = WJoy;
 			};
 			name = Release;

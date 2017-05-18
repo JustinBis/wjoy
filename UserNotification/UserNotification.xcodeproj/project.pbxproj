@@ -11,7 +11,6 @@
 		0A23BFDE15BD4593009CB4C4 /* closebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A23BFB715BD4593009CB4C4 /* closebutton.png */; };
 		0A23BFE015BD4593009CB4C4 /* AnimatedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23BFB915BD4593009CB4C4 /* AnimatedWindow.m */; };
 		0A23BFE415BD4593009CB4C4 /* AppleUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23BFBD15BD4593009CB4C4 /* AppleUserNotificationCenter.m */; };
-		0A23BFE615BD4593009CB4C4 /* GrowlUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23BFBF15BD4593009CB4C4 /* GrowlUserNotificationCenter.m */; };
 		0A23BFE815BD4593009CB4C4 /* LeftBottomNotificationLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23BFC115BD4593009CB4C4 /* LeftBottomNotificationLayoutManager.m */; };
 		0A23BFEA15BD4593009CB4C4 /* LeftTopNotificationLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23BFC315BD4593009CB4C4 /* LeftTopNotificationLayoutManager.m */; };
 		0A23BFEC15BD4593009CB4C4 /* NotificationLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23BFC515BD4593009CB4C4 /* NotificationLayoutManager.m */; };
@@ -28,8 +27,6 @@
 		0A23BFFD15BD4593009CB4C4 /* UserNotificationCenterScreenCornerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A23BFD615BD4593009CB4C4 /* UserNotificationCenterScreenCornerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A23BFFE15BD4593009CB4C4 /* UserNotificationCenterScreenCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23BFD715BD4593009CB4C4 /* UserNotificationCenterScreenCornerView.m */; };
 		0A23C00315BD4593009CB4C4 /* screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A23BFDC15BD4593009CB4C4 /* screen.jpg */; };
-		0A23C03315BD46E0009CB4C4 /* Growl.framework in Copy Growl */ = {isa = PBXBuildFile; fileRef = 0A23C01115BD464C009CB4C4 /* Growl.framework */; };
-		0A23C03515BD46F4009CB4C4 /* Growl.framework in Copy 10.5 Growl */ = {isa = PBXBuildFile; fileRef = 0A23C00E15BD4641009CB4C4 /* Growl.framework */; };
 		0A23C1B215BD6533009CB4C4 /* UserNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* UserNotification.framework */; };
 		0A23C1BA15BD6541009CB4C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		0A23C1C015BD6552009CB4C4 /* UserNotification.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* UserNotification.framework */; };
@@ -50,28 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0A23C04715BD46F9009CB4C4 /* Copy Growl */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0A23C03315BD46E0009CB4C4 /* Growl.framework in Copy Growl */,
-			);
-			name = "Copy Growl";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A23C04815BD46F9009CB4C4 /* Copy 10.5 Growl */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = 10.5;
-			dstSubfolderSpec = 10;
-			files = (
-				0A23C03515BD46F4009CB4C4 /* Growl.framework in Copy 10.5 Growl */,
-			);
-			name = "Copy 10.5 Growl";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0A23C1CC15BD655C009CB4C4 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,8 +69,6 @@
 		0A23BFB915BD4593009CB4C4 /* AnimatedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedWindow.m; sourceTree = "<group>"; };
 		0A23BFBC15BD4593009CB4C4 /* AppleUserNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleUserNotificationCenter.h; sourceTree = "<group>"; };
 		0A23BFBD15BD4593009CB4C4 /* AppleUserNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleUserNotificationCenter.m; sourceTree = "<group>"; };
-		0A23BFBE15BD4593009CB4C4 /* GrowlUserNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlUserNotificationCenter.h; sourceTree = "<group>"; };
-		0A23BFBF15BD4593009CB4C4 /* GrowlUserNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlUserNotificationCenter.m; sourceTree = "<group>"; };
 		0A23BFC015BD4593009CB4C4 /* LeftBottomNotificationLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftBottomNotificationLayoutManager.h; sourceTree = "<group>"; };
 		0A23BFC115BD4593009CB4C4 /* LeftBottomNotificationLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftBottomNotificationLayoutManager.m; sourceTree = "<group>"; };
 		0A23BFC215BD4593009CB4C4 /* LeftTopNotificationLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTopNotificationLayoutManager.h; sourceTree = "<group>"; };
@@ -121,8 +94,6 @@
 		0A23BFD615BD4593009CB4C4 /* UserNotificationCenterScreenCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNotificationCenterScreenCornerView.h; sourceTree = "<group>"; };
 		0A23BFD715BD4593009CB4C4 /* UserNotificationCenterScreenCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNotificationCenterScreenCornerView.m; sourceTree = "<group>"; };
 		0A23BFDC15BD4593009CB4C4 /* screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screen.jpg; sourceTree = "<group>"; };
-		0A23C00E15BD4641009CB4C4 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = 10.5/Growl.framework; sourceTree = "<group>"; };
-		0A23C01115BD464C009CB4C4 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		0A23C07C15BD4BD0009CB4C4 /* UserNotificationCenterProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNotificationCenterProtected.h; sourceTree = "<group>"; };
 		0A23C17A15BD64EE009CB4C4 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A23C17C15BD64EE009CB4C4 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
@@ -205,24 +176,6 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		0A23C01915BD4654009CB4C4 /* growl */ = {
-			isa = PBXGroup;
-			children = (
-				0A23C04E15BD476C009CB4C4 /* framework */,
-				0A23BFBE15BD4593009CB4C4 /* GrowlUserNotificationCenter.h */,
-				0A23BFBF15BD4593009CB4C4 /* GrowlUserNotificationCenter.m */,
-			);
-			name = growl;
-			sourceTree = "<group>";
-		};
-		0A23C01E15BD465E009CB4C4 /* 10.5 */ = {
-			isa = PBXGroup;
-			children = (
-				0A23C00E15BD4641009CB4C4 /* Growl.framework */,
-			);
-			name = 10.5;
-			sourceTree = "<group>";
-		};
 		0A23C04915BD4723009CB4C4 /* framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,7 +196,6 @@
 			children = (
 				0A23C07C15BD4BD0009CB4C4 /* UserNotificationCenterProtected.h */,
 				0A23C04C15BD474E009CB4C4 /* apple */,
-				0A23C01915BD4654009CB4C4 /* growl */,
 				0A23C04F15BD4776009CB4C4 /* own */,
 			);
 			name = internal;
@@ -256,15 +208,6 @@
 				0A23BFBD15BD4593009CB4C4 /* AppleUserNotificationCenter.m */,
 			);
 			name = apple;
-			sourceTree = "<group>";
-		};
-		0A23C04E15BD476C009CB4C4 /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				0A23C01E15BD465E009CB4C4 /* 10.5 */,
-				0A23C01115BD464C009CB4C4 /* Growl.framework */,
-			);
-			name = framework;
 			sourceTree = "<group>";
 		};
 		0A23C04F15BD4776009CB4C4 /* own */ = {
@@ -399,8 +342,6 @@
 				8DC2EF520486A6940098B216 /* Resources */,
 				8DC2EF540486A6940098B216 /* Sources */,
 				8DC2EF560486A6940098B216 /* Frameworks */,
-				0A23C04715BD46F9009CB4C4 /* Copy Growl */,
-				0A23C04815BD46F9009CB4C4 /* Copy 10.5 Growl */,
 			);
 			buildRules = (
 			);
@@ -419,6 +360,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					8DC2EF4F0486A6940098B216 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "UserNotification" */;
 			compatibilityVersion = "Xcode 3.1";
@@ -478,7 +424,6 @@
 			files = (
 				0A23BFE015BD4593009CB4C4 /* AnimatedWindow.m in Sources */,
 				0A23BFE415BD4593009CB4C4 /* AppleUserNotificationCenter.m in Sources */,
-				0A23BFE615BD4593009CB4C4 /* GrowlUserNotificationCenter.m in Sources */,
 				0A23BFE815BD4593009CB4C4 /* LeftBottomNotificationLayoutManager.m in Sources */,
 				0A23BFEA15BD4593009CB4C4 /* LeftTopNotificationLayoutManager.m in Sources */,
 				0A23BFEC15BD4593009CB4C4 /* NotificationLayoutManager.m in Sources */,
@@ -557,12 +502,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -571,6 +519,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = UserNotification;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -580,17 +530,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = UserNotification;
 				WRAPPER_EXTENSION = framework;
 			};

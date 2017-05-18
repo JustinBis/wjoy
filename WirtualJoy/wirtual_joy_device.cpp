@@ -10,9 +10,10 @@
 #include "wirtual_joy_device.h"
 #include "wirtual_joy_debug.h"
 
-#include <IOKit/hid/IOHIDUsageTables.h>
+#include <IOKit/usb/IOUSBHostHIDDevice.h>
 
 #define super IOHIDDevice
+#define kMaxHIDReportSize 256
 
 OSDefineMetaClassAndStructors(WirtualJoyDevice, super)
 

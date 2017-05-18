@@ -176,8 +176,8 @@ static NSUInteger maxConnectedDevices = 0;
 			break;
 	}
 	
-	NSLog(@"\nMinLx: %f\tMinLy: %f\tMaxLx: %f\tMaxLy: %f", minL.x, minL.y, maxL.x, maxL.y);
-	NSLog(@"\nMinRx: %f\tMinRy: %f\tMaxRx: %f\tMaxRy: %f", minR.x, minR.y, maxR.x, maxR.y);
+	NSLog(@"\nMinLx: %i\tMinLy: %i\tMaxLx: %i\tMaxLy: %i", minL.x, minL.y, maxL.x, maxL.y);
+	NSLog(@"\nMinRx: %i\tMinRy: %i\tMaxRx: %i\tMaxRy: %i", minR.x, minR.y, maxR.x, maxR.y);
 	
 	[m_HIDState setPointer:stick position:position];
 }

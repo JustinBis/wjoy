@@ -1,35 +1,39 @@
-# WJoy-foohid
+# WJoy
 
-WJoy allows you to use Wii controllers as native gamepads on OS X.
+You must have SIP disabled for this application to work. Please disable it by booting your Mac into recovery mode, opening the Terminal and running:
 
-The following controllers are supported
+```sh
+csrutil disable
+```
 
-- Wii Remote
-	- Nunchuck
-	- Classic Controller
-- Wii U Pro Controller
-- Every other contoller supported by the original WJoy project
+You may read more here: http://www.imore.com/el-capitan-system-integrity-protection-helps-keep-malware-away
 
-This project is a fork of the original (now unsupported) Wjoy project. WJoy-foohid uses foohid as the input driver rather than using the original (now unsupported) WJoy driver.
+##### Installation Instructions
 
+ 1. Download WJoy here: https://www.dropbox.com/s/oowoqvnx091bcjx/WJoy%20Package.zip?dl=1
+ 2. Move the `wjoy.kext` file to `/Library/Extensions`
+ 3. Move the `WJoy.app` to `/Applications`
+ 4. Turn on Bluetooth.
+ 5. Start the WJoy application.
+ 6. In the system tray, click the WJoy icon and click Begin Discovery.
+ 7. Turn on the Wiimote or Wii U Pro Controller by pressing any key on it.
+ 8. Press the sync button (red flat button on the controller) while in discovery mode.
+ 9. Once connected, configure the Wii U Pro controller as a Steam controller in Steam Big Picture Mode. Read more here: https://www.howtogeek.com/234427/how-to-remap-buttons-on-your-steam-controller/
+ 
+In my experience, Unity games for Mac do not support the Wii U Pro Controller, since they tend to use the XInput package. There is no application that emulates an Xbox controller for Mac.
 
-## Quick Start
+Working:
 
-1. Download and install the latest release of foohid: https://github.com/unbit/foohid/releases/latest
-2. Download and run the latest release of WJoy-foohid: https://github.com/JustinBis/wjoy-foohid/releases/latest
-3. Ensure that bluetooth is enabled and then click the wiimote icon on the menu bar
-4. Click "start discovery" and then hit the red sync button on your Wii Remote or other accessory
-5. Once connected, your controller is ready to be used in any games that support native gamepads. Enjoy!
+ - Binding of Isaac
+ - Gang Beasts
+ - DolphinEmu
+ - Antichamber
+ - Hotline Miami
+ - Teleglitch
 
+Not working:
 
-## Wii U Pro Controller Analog Stick Calibration
-
-WJoy will now automatically calibrate the Wii U Pro Controller analog sticks on the fly so that they reach 100% of the analog stick range rather than being stuck around 60-70% range. To calibrate the sticks, simply move them in a few full circles so that WJoy can detect the range of motion for each stick.
-
-Thanks to [Kametrixom](https://github.com/Kametrixom) for this fix.
-
-## Why foohid?
-
-In OS X El Capitan (version 10.11), Apple added [System Integrity Protection (AKA "rootless" mode)](http://apple.stackexchange.com/questions/193368/) as a security feature. Among other things, this feature prevents the operating system from running unsigned kernel extensions (kexts). The original WJoy project included an unsigned kext to provide a virtual HID for each connected wiimote and thus the original project no longer works on modern versions of OS X.
-
-Thankfully, you can still run kexts signed by Apple or by approved developers. That's where foohid comes in. foohid is a signed kext that allows programs to create virtual HID devices on demand -- exactly what we need. With foohid installed, we can use WJoy without having to disable important security features on the operating system.
+ - Ultimate Chicken Horse
+ - Broforce
+ - Monaco
+ - Superhot

@@ -23,6 +23,7 @@
 		0A4696EC15B59587003AB8FD /* WirtualJoy.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0A46960715B593A2003AB8FD /* WirtualJoy.framework */; };
 		0A4696F915B595F1003AB8FD /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4696F815B595F1003AB8FD /* test.m */; };
 		0A46971615B5970A003AB8FD /* WirtualJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A46960715B593A2003AB8FD /* WirtualJoy.framework */; };
+		3AAB09211E2C24330032909A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1CB32615B022BD0012FCC7 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAB09211E2C24330032909A /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +326,11 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				TargetAttributes = {
+					32D94FC30562CBF700B6AF17 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "WirtualJoy" */;
 			compatibilityVersion = "Xcode 3.1";
@@ -594,17 +601,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
-				MODULE_NAME = "com.JustinBis.driver.wjoy-foohid";
+				INSTALL_PATH = /Library/Extensions;
+				MODULE_NAME = com.alxn1.driver.wjoy;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_NAME = wjoy;
 				WRAPPER_EXTENSION = kext;
@@ -615,14 +623,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				DEVELOPMENT_TEAM = "";
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
-				MODULE_NAME = "com.JustinBis.driver.wjoy-foohid";
+				INSTALL_PATH = /Library/Extensions;
+				MODULE_NAME = com.alxn1.driver.wjoy;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_NAME = wjoy;
 				WRAPPER_EXTENSION = kext;
